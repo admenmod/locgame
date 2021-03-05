@@ -1,0 +1,67 @@
+:root {
+	--m: 1px;
+	--mw: 1%;
+}
+
+[hidden] {display:none !important;}
+
+* {
+	padding: 0;
+	margin: 0;
+	user-select:none;
+}
+
+body {
+	color: #eeeeee;
+	background: #222222;
+}
+
+canvas-leyar {
+	width: 100vw;
+	height: 100vh;
+	background: #333333;
+	overflow:hidden;
+}
+
+.gui {
+	display:grid;
+	width:100%;
+	height:100%;
+}
+
+.line-game {
+	display:grid;
+	padding:0 var(--mw);
+	justify-items:end;
+	align-items:center;
+	position:relative;
+	left:200px;
+	top:calc(100%);
+	width:calc(100% - 200px - var(--m) * 2 - var(--mw) * 2);
+	height:calc(80px - var(--m) * 2);
+	transform:translate(0, calc(-100% - var(--m)));
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+button {
+	padding:3vh 3vw;
+	color:#eeeeee;
+	background:#1a3757;
+	border:1px solid #00f2ff;
+	border-radius: 5px;
+	outline:none;
+} button:active {
+	background:#47678a;
+}
+
+.menu {
+	justify-self:center;
+	align-self:center;
+	display:grid;
+	justify-items:center;
+	align-items:center;
+}
+.menu > .menu-item {
+	padding:3vh 10vw;
+}

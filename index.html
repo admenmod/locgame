@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Main</title>
+</head>
+<body>
+	<canvas-leyar id="canvas">
+		<div class="gui">
+			<div hidden data-scene="menu" class="menu">
+				<button data-button="cutstart" class="menu-item">Start</button>
+			</div>
+			<div hidden data-scene="lineGame" class="line-game">
+				<button data-button="inventory" class="but-inventory">Inventory</button>
+			</div>
+		</div>
+	</canvas-leyar>
+	
+	<script src="./eruda.js"></script>
+	<script>eruda.init();</script>
+	
+	<script src="./assets/ver.js"></script>
+	<script src="./assets/controller.js"></script>
+	
+	<script src="./init.js"></script>
+	
+	<script src="./assets/nodes.js"></script>
+	<script src="./nodes.js"></script>
+	
+	<script src="./gui.js"></script>
+	
+	<script src="./cutscenes/start.js"></script>
+	
+	<script src="./scenes/menu.js"></script>
+	<script src="./scenes/main.js"></script>
+	<script src="./scenes/inventory.js"></script>
+</body>
+</html>
