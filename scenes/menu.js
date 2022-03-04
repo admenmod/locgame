@@ -1,13 +1,13 @@
 'use strict';
 scenes.menu = function() {
 	GUI.on('cutstart', e => Scene.set(cutscenes.start));
-	
+	//*
 	let code = codeFunction(function() {
 		function djjd() {
 			ldje(33);
 		};
 	//	lge(493);
-		djjd();
+	//	djjd();
 	}, {
 		log: console.log,
 		dir: console.dir,
@@ -24,7 +24,7 @@ scenes.menu = function() {
 //	xx.fileName = 'dejd';
 //	throw xx;
 
-	
+	//*/
 //===============init===============//
 	this.init = function() {
 		GUI.scenes.menu.hidden = false;
